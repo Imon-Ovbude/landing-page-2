@@ -190,3 +190,107 @@ body {
   font-size: 1.5rem;
   color: #444;
 }
+
+@media screen and (max-width: 1200px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'content';
+  }
+
+  .grid-video {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'video'
+      'benefit';
+  }
+
+  .video {
+    justify-self: center;
+  }
+
+  .benefits-section {
+    justify-self: center;
+    margin-top: 2rem;
+  }
+
+  .grid-benefit-detail {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .grid-benefit-detail {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .email-form {
+    flex-direction: column;
+  }
+
+  .email-form-button {
+    max-width: initial;
+    width: 100%;
+  }
+
+  .email-form-input {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .email-form-input::placeholder {
+    text-indent: 10px;
+  }
+
+  .benefit {
+    font-size: 2rem;
+  }
+
+  .image {
+    height: 2rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .brand-name {
+    display: none;
+  }
+
+  .logo {
+    margin-top: 1rem;
+  }
+
+  .email-form {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .benefit {
+    font-size: 1.25rem;
+  }
+
+  .image {
+    height: 1.25rem;
+    margin-right: 0.5rem;
+  }
+
+  .benefits-detail-title {
+    font-size: 1.25rem;
+  }
+
+  .benefit-detail-text {
+    font-size: 1.15rem;
+  }
+
+  .benefit-detail {
+    margin: 1rem;
+  }
+
+  ..grid-benefit-detail {
+    margin-top: 1rem;
+  }
+}
