@@ -1,29 +1,31 @@
-@font-face {
+/* @font-face {
   font-family: 'Gotham Rounded';
-  src: url('fonts/GothamRounded-Bold.woff2') format('woff2'),
+  src: url('/fonts/GothamRounded-Bold.woff2') format('woff2'),
     url('fonts/GothamRounded-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Gotham Rounded';
-  src: url('fonts/GothamRounded-Light.woff2') format('woff2'),
+  src: url('/fonts/GothamRounded-Light.woff2') format('woff2'),
     url('fonts/GothamRounded-Light.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Gotham Rounded';
-  src: url('fonts/GothamRounded-Book.woff2') format('woff2'),
+  src: url('/fonts/GothamRounded-Book.woff2') format('woff2'),
     url('fonts/GothamRounded-Book.woff') format('woff');
   font-weight: bold;
   font-style: normal;
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap');
 
 body {
   margin: 0 auto;
   padding-bottom: 50px;
-  font-family: Gotham Rounded, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Header Section */
@@ -164,4 +166,27 @@ body {
 .benefit .image {
   height: 3rem;
   margin-right: 2rem;
+}
+
+/* benefits detail section */
+.grid-benefit-detail {
+  margin-top: 4rem;
+}
+
+.benefit-detail {
+  grid-column: span 2;
+  margin: 2rem;
+}
+
+.benefit-detail-title {
+  text-align: center;
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.benefit-detail-text {
+  font-size: 1.5rem;
+  color: #444;
 }
